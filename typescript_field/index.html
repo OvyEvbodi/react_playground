@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shims</title>
+</head>
+<body>
+    <header>
+        <h3>Shims holdings</h3>
+        <p>
+            The loan app, lmao, just kidding... <span>We just care care about your finances</span>
+        </p>
+    </header>
+    <section id="finance_list">
+
+    </section>
+    <section>
+        <div class="form_wrap">
+            <form>
+                <div class="data_group">
+                    <div class="form_group">
+                        <label for="spendings/earnings">Finance type: </label>
+                        <select id="finance" name="spendings/earnings">
+                            <option disabled>choose</option>
+                            <option value="expense" >expense</option>
+                            <option value="income">income</option>
+                        </select>
+                    </div>
+                    <div class="form_group">
+                        <label for="amount">$: </label>
+                        <input name="amount" id="amount" placeholder="enter amount">
+                    </div>
+                    <div class="form_group">
+                        <label for="source/dest">To/From: </label>
+                        <input name="source/dest" id="finance_name" placeholder="from/to">
+                    </div>
+                </div>
+                <div class="form_group">
+                    <button>Add</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div>Vee Holdings inc.</div>
+    </footer>
+</body>
+</html>
