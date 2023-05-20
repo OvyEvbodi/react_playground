@@ -8,10 +8,25 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
-    padding: 2rem 1rem;
-    background-color: #535c83;
+    padding:0 2rem;
+    background-color: #f6f7fb;
+    color:#403f3f;
+}
+header {
+    text-align: center;
+    padding: 1rem;
+}
+header h3 {
+    margin-top: 2rem;
+    color: #111e3e;
+    text-transform: uppercase;
+}
+header p > span {
+    font-family: cursive;
+    color: #111e3e;
+    font-weight: 700;
 }
 #finance_list {
     display:none;
@@ -23,6 +38,7 @@ form {
     align-items: center;
     background-color: #ccc;
     padding: 2rem;
+    box-shadow: 5px 5px 20px #1b1e2d;
 }
 .data_group {
     display: flex;
@@ -32,18 +48,37 @@ form {
 }
 .form_group {
     padding: 0.5rem;
+    text-align: center;
 }
-.form_group input {
+.form_group input, .form_group select {
     padding: 0.5rem 1rem;
     background-color: #fff;
     outline: none;
-    box-shadow: 8px 8px 8px #000;
+    border: none;
+    color: #3f3d3d;
 }
 .add_btn {
-    padding: 1rem 2rem;
-    background-color: #0f0;
+    padding: 0.6rem 2.3rem;
+    background-color: rgb(47, 94, 64);
     color: #fff;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    transition: all 300ms ease;
+    border-radius: 4px;
+    border: 2px solid rgb(47, 94, 64);
+
 }
-.add_btn {
+.add_btn:hover {
     opacity: 0.7;
+    color: rgb(22, 58, 32);
+    background-color: #ccc;
+    border: 2px solid rgb(22, 58, 32);
+}
+footer {
+    text-decoration: underline;
+    background-color: #111e3e;
+    min-width: 100vw;
+    text-align: center;
+    padding: 2rem;
 }
