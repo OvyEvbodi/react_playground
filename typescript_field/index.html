@@ -15,7 +15,11 @@
             The loan app, lmao, just kidding... <span>We just care care about your finances :)</span>
         </p>
     </header>
-    <section id="finance_list">
+    <section>
+        <!--finances get injected here-->
+        <ul id="finance_list">
+        
+        </ul>
 
     </section>
     <section>
@@ -23,7 +27,7 @@
             <form>
                 <div class="data_group">
                     <div class="form_group">
-                        <label for="spendings/earnings">Finance type: </label>
+                        <label for="spendings/earnings">Finance type: </label><br>
                         <select id="finance" name="spendings/earnings">
                             <option disabled>choose</option>
                             <option value="expense" >expense</option>
@@ -31,12 +35,16 @@
                         </select>
                     </div>
                     <div class="form_group">
-                        <label for="amount">$: </label>
+                        <label for="amount">$: </label><br>
                         <input type="number" name="amount" id="amount" placeholder="enter amount">
                     </div>
                     <div class="form_group">
-                        <label for="source/dest">To/From: </label>
+                        <label for="source/dest">To/From: </label><br>
                         <input type="text" name="source/dest" id="finance_name" placeholder="from/to">
+                    </div>
+                    <div class="form_group">
+                        <label for="details">Details: </label><br>
+                        <input type="text" name="details" id="details" placeholder="enter details">
                     </div>
                 </div>
                 <div class="form_group">
