@@ -25,20 +25,21 @@ concurrency:
 jobs:
   # Build job
   build:
-    working-directory: "${{ github.workspace }}/react_playground"
     runs-on: ubuntu-latest
+    working-directory: ${{ github.workspace }}/react_playground
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
+          if [ -f "${{ github.workspace }}/react_playground/yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=yarn" >> $GITHUB_OUTPUT
             exit 0
-          elif [ -f "${{ github.workspace }}/package.json" ]; then
+          elif [ -f "${{ github.workspace }}/react_playground/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
             echo "runner=npx --no-install" >> $GITHUB_OUTPUT
